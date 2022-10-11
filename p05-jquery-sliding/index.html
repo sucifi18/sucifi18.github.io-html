@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Sliding</title>
+ 
+</head>
+<style>
+    img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 40px;
+    box-shadow: 1px 1px 4px black;
+    padding: 10px;
+    transition: 0.2s;
+    margin-bottom: 10px;
+}
+.pohon{
+    font-family: Lucida Calligraphy;
+    font-style: italic;
+    font-size: 30px;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: black;
+    cursor: pointer;
+    box-shadow: 5px 10px 16px 0px rgb(0 0 0 / 20%);
+    background-color: brown;
+}
+.ranting{
+    font-family: Georgia;
+    font-size: 25px;
+    cursor: pointer;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    cursor: pointer;
+}
+body{
+    display: block;
+    margin: 8px;
+    background-color: lightcoral;
+}
+.daun{
+    margin: 8px 15px;
+}
+.pusing{
+    box-shadow: 5px 10px 16px 0px rgb(0 0 0 / 20%);
+    background-color: white;(196, 183, 183);
+}
+</style>
+<body>
+    <div class="daun">
+        <div align= "center" class="pohon">Tentang saya!</div>
+            <div class="pusing">
+                <br>
+                <img src="ft2.jpg">
+                <h2 align="center" class="ranting">Suci Fidianti</h2>
+                <p align="center">Kon'nichiwa Hajimemashite, saya Suci Fidianti dari prodi Sistem Informasi, kelas SI-2021-S, Aku sangat suka dengan musik, salam kenal. Arigato <br><br><br></p>
+
+        </div>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+    $(".pohon").click(function(){
+        $(".pusing").slideToggle("slow");
+    });
+});
+    </script>
+</body>
+</html>

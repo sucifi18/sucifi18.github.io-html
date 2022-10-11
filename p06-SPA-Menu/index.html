@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+<style>
+*{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Montserrat', Lucida Calligraphy;
+}
+
+body{
+    background-image: url('../img/tbg.png');
+    background-repeat: no-repeat;
+    background-size:cover
+}
+.kemarin .bumi{
+    font-weight: bold;
+}
+
+.hari{
+    background-color: deeppink																											;
+    padding: 10px;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 10px;
+    text-align: justify;
+}
+.hari-kemarin{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.kemarin{
+    position: fixed;
+    background-color: pink;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.1s ease-in-out;
+    box-shadow:1px 1px 10px;
+    z-index: 99;
+}
+.kemarin .hari-kemarin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    transition: all 0.1s ease-in-out;
+}
+
+.kemarin ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.kemarin a{
+    color: black;
+    text-decoration: none;
+    padding: 7px 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.kemarin a:hover{
+    color: black;
+}
+
+.terserah{
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+.terserah span {
+    font-size: 35px;
+    color: crimson;
+    text-shadow: white;
+}
+
+</style>
+
+    <nav class="kemarin">
+    <div class="hari-kemarin">
+    <span class="terserah"><a href="../index.html">Suci Fidianti</a></span>
+      <ul>
+       <li class="bumi" id="nav_hari1"><a href="#" style="font-size: 25px;">Home</a></li>
+       <li class="langit" id="nav_hari2"><a href="#" style="font-size: 25px;">Produk</a></li>
+       <li class="langit" id="nav_hari3"><a href="#" style="font-size: 25px;">Layanan</a></li>
+
+      </ul>
+     </div>
+    </nav>
+
+    <br><br><br>
+
+    <div class="hari" id="hari1">
+      <br>
+      <h2>Menu Home</h2>
+        <p>menu utama pada ms word yang memiliki 5 group, dan di dalam-nya terdiri atas beberapa ikon dengan perintah / command yang berbeda sesuai dengan nama kelompok-nya. Kegunaan utama-nya untuk mengatur tulisan.</p>
+    </div>
+    <div class="hari" id="hari2">
+        <br>
+      <h2>Menu Produk</h2>
+        <p>Produk adalah hasil jadi dari sebuah proses yang dilakukan oleh pembuat atau produsen yang kemudian akan didistribusikan kepada pembeli atau konsumen sesuai yang dibutuhkannya.</p>   
+    </div>
+    <div class="hari" id="hari3">
+        <br>
+      <h2>Menu Layanan</h2>
+        <p>Layanan adalah suatu sikap yang dapat mengakibatkan rasa puas atau tidak puas yang dialami konsumen pada saat terjadinya proses tindakan</p>   
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jscty.js"></script>
+</body>
+</html>

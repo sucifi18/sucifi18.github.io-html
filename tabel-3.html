@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery 10 Teman</title>
+</head>
+<body>
+    <style>
+body {
+    font-family: "Rockwell", "Arial Narrow", Arial, sans-serif;
+    background-image: url('ft1.jpg');
+    background-size: cover;
+    background-attachment: fixed; 
+    color: lightgreen;
+    text-shadow: white;
+}
+
+h1{
+    color: pink;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+h1:hover{
+    color: white;
+    letter-spacing: 4px;
+}
+
+img{
+    width: 4cm;
+    border-top: 70%;
+    box-shadow: 2px 2px 4px gray;
+    padding: 5px;
+    background: white;
+    margin: 15px;
+    transition: 0.2s;
+    opacity: 93%;
+    width: 6cm;
+    height: 6cm;
+    object-fit: cover;
+}
+
+img:hover{
+    transform: scale(1.2);
+    opacity: 100%;
+    box-shadow: 1px 1px 6px red;
+}
+
+table{
+    border-collapse: collapse;
+    width: 90%;
+}
+
+td, th{
+    border: 1px solid #fc00ff;
+    padding: 8px;
+
+
+}
+
+td:first-child{
+    text-align: center;
+
+
+}
+
+.judul{
+    text-align: center;
+    font-size: 30px;
+	color : Pink;
+}
+
+.judul-tabel{
+    background-color: pink;
+    color: white;
+}
+
+.top1{
+    text-align: center;
+    color: white;
+}
+
+.tombol{
+    background-color: #ff00fc;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.tombol:hover{
+    background-color: #45a049;
+}
+
+a{
+    color: orangered;
+    text-decoration: none;
+}
+td{
+	color: white;
+}
+
+td:hover{
+    background-color: #e84dff;
+}
+	</style>
+
+    <h2 class="judul">The Top 10 of My Best Friend</h2>
+    <table align="center">
+        <tr class="judul-tabel">
+            <th>No</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Aksi</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="text">Chica.A.P</td>
+            <td class="text">Majalengka</td>
+            <td class="text"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="text">Danu.R</td>
+            <td class="text">Magelang</td>
+            <td class="text"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>M.ivan.A</td>
+            <td class="text">Pekalongan</td>
+            <td class="text"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="text">Meli Anggraeni</td>
+            <td class="text">Kuningan</td>
+            <td class="text"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="text">Astudie.S</td>
+            <td class="text">Cirebon</td>
+            <td class="text"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td class="text">S. Rosyid</td>
+            <td class="text">Nganjuk</td>
+            <td class="text"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td class="text">Sandi.P</td>
+            <td class="text">Cirebon</td>
+            <td class="text"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td class="text">Siti Asrifah</td>
+            <td class="text">Yogyakarta</td>
+            <td class="text"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td class="text">Zaenal.A</td>
+            <td class="text">Ponorogo</td>
+            <td class="text"><a href="#">Hapus</a></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td class="text">Tiara.L.D</td>
+            <td class="text">Cirebon</td>
+            <td class="text"><a href="#">Hapus</a></td>
+    </table><br><br>
+
+<div class="top1">
+	<a onclick="alert('Selamat Tinggal')" href="index.html" class="tombol">kembali</a>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){ $('.text').click(function(){ 
+         let text = $(this).text();
+         alert(`Anda mengklik text yang berisi text "${text}"`);
+          if(text!='Hapus'){ 
+           let text2 = prompt('Mau diubah?:', text);
+           if(!text2) return; $(this).text(text2); }
+           else{ let yakin = confirm('Yakin?'); if(!yakin) return;  } }) }) 
+    </script>
+
+    
+</body>
+</html>

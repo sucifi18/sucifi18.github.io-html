@@ -1,0 +1,40 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: lightpink;
+    font-family: 'Lucida Calligraphy', sans-serif;
+
+}
+
+td{
+    background-color: pink;
+    text-align: center;
+} 
+
+td:hover{
+    background-color: whitesmoke;
+}
+td, th{
+    border: 1px solid ;
+    color: black;
+    padding: 8px;
+}
+
+th{
+    background-color: deeppink;
+}
+
+p, h2{
+    color: black;
+}
+
+.harimau{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 20px;
+}
+.harimau-sekali{
+    background-color: hotpink;
+}
